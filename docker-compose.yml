@@ -64,8 +64,15 @@ services:
       - "6379:6379"
 
   mailhog:
-    image: mailhog:mailhog
+    image: mailhog/mailhog
+    command: ["-smtp-bind-addr", "0.0.0.0:1025"]
     container_name: mailhog
+    user: root
+    expose:
+      - 1025
+      - 8025
     ports:
       - "1025:1025" # SMTP Server
       - "8025:8025" # Web UI
+    healthcheck:
+      test: echo | telnet 127.0.0.1 1025
