@@ -17,3 +17,4 @@ A simple docker compose workflow that sets up a LEMP network of containers for l
 - *php* `:9000`
 - *composer*
 - *redis* `:6379`
+- *mailhog* `:1025` for smtp server and `:8025` for the web UI
