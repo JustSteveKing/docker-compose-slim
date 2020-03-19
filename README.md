@@ -17,5 +17,5 @@ A simple docker compose workflow that sets up a LEMP network of containers for l
 - *php* `:9000`
 - *composer*
 - *redis* `:6379`
-- *mailhog* `:1025` for smtp server and `:8025` for the web UI
-- *elasticsearch* `:9200` - set up with only one node currently
+- *mailhog* `:1025` for smtp server and `:8025` for the web UI.
+- *elasticsearch* `:9200` - set up with only 3 nodes as per the elastic documentation.
