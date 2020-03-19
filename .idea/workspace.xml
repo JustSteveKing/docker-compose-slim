@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="178ded66-ef3c-4040-9aeb-8f42fda13392" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="ProjectId" id="1ZLdZ3ne0BFebDoAgn3EnACmE8b" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="178ded66-ef3c-4040-9aeb-8f42fda13392" name="Default Changelist" comment="" />
+      <created>1584622359932</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584622359932</updated>
+      <workItem from="1584622361411" duration="1615000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="790" y="479" width="399" height="156" key="NewPhpFileDialog" timestamp="1584623386823">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="790" y="479" width="399" height="156" key="NewPhpFileDialog/70.27.1850.1053/1920.0.1920.1080@70.27.1850.1053" timestamp="1584623386823" />
+  </component>
+</project>

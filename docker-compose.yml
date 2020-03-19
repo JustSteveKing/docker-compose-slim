@@ -1,0 +1,58 @@
+version: '3'
+
+networks:
+  app:
+
+services:
+  nginx:
+    image: nginx:stable-alpine
+    container_name: nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src:/var/www/html
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - php
+      - mysql
+    networks:
+      - app
+
+  mysql:
+    image: mysql:8
+    container_name: mysql
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: slim
+      MYSQL_USER: slim
+      MYSQL_PASSWORD: secret
+      MYSQL_ROOT_PASSWORD: secret
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+    networks:
+      - app
+
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: php
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - "9000:9000"
+    networks:
+      - app
+
+  composer:
+    image: composer:latest
+    container_name: composer
+    volumes:
+      - ./src:/var/www/html
+    depends_on:
+      - php
+    networks:
+      - app
