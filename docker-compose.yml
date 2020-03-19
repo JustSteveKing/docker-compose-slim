@@ -56,3 +56,9 @@ services:
       - php
     networks:
       - app
+
+  redis:
+    image: "redis:alpine"
+    container_name: redis
+    ports:
+      - "6379:6379"

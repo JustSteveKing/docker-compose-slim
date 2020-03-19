@@ -16,4 +16,4 @@ A simple docker compose workflow that sets up a LEMP network of containers for l
 - *mysql* `:3306`
 - *php* `:9000`
 - *composer*
-
+- *redis* `:6379`
